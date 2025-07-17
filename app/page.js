@@ -29,7 +29,7 @@ export default function Page() {
     const [color1, setColor1] = useState('#f5f5dc')
     const [color2, setColor2] = useState('#f5f5dc')
     const [color3, setColor3] = useState('#ffffff')
-    const [color4, setColor4] = useState('#8888ff')
+    const [color4, setColor4] = useState('#e6e6e6')
 
     const [opacity1, setOpacity1] = useState(1)
     const [opacity2, setOpacity2] = useState(1)
@@ -41,7 +41,6 @@ export default function Page() {
     const [visible3, setVisible3] = useState(true)
     const [visible4, setVisible4] = useState(true)
 
-    const [roughness4, setRoughness4] = useState(0.5) // 👈 nový stav pro roughness
     const [lightIntensity, setLightIntensity] = useState(1)
 
     const dirLightRef1 = useRef()
@@ -60,18 +59,15 @@ export default function Page() {
                 <input type="range" min={0} max={1} step={0.01} value={opacity2} onChange={(e) => setOpacity2(+e.target.value)} />
                 <button onClick={() => setVisible2(!visible2)}>{visible2 ? '👁️' : '🚫'}</button>
 
-                <div style={{ marginTop: 10 }}>Crown21:</div>
+                <div style={{ marginTop: 10 }}>Crown24:</div>
                 <input type="color" value={color3} onChange={(e) => setColor3(e.target.value)} />
                 <input type="range" min={0} max={1} step={0.01} value={opacity3} onChange={(e) => setOpacity3(+e.target.value)} />
                 <button onClick={() => setVisible3(!visible3)}>{visible3 ? '👁️' : '🚫'}</button>
 
-                <div style={{ marginTop: 10 }}>Crown22:</div>
+                <div style={{ marginTop: 10 }}>Tibase:</div>
                 <input type="color" value={color4} onChange={(e) => setColor4(e.target.value)} />
                 <input type="range" min={0} max={1} step={0.01} value={opacity4} onChange={(e) => setOpacity4(+e.target.value)} />
                 <button onClick={() => setVisible4(!visible4)}>{visible4 ? '👁️' : '🚫'}</button>
-
-                <div style={{ marginTop: 5 }}>Roughness:</div>
-                <input type="range" min={0} max={1} step={0.01} value={roughness4} onChange={(e) => setRoughness4(+e.target.value)} />
 
                 <div style={{ marginTop: 10 }}>💡 Scene Light:</div>
                 <input type="range" min={0} max={2} step={0.01} value={lightIntensity} onChange={(e) => setLightIntensity(+e.target.value)} />
@@ -92,7 +88,7 @@ export default function Page() {
                         opacity={opacity4}
                         visible={visible4}
                         metalness={0.1}
-                        roughness={0.1} // 👈 předání hodnoty
+                        roughness={0} // 👈 zrcadlový povrch
                     />
                 </Suspense>
 
