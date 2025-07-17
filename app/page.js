@@ -55,12 +55,12 @@ export default function Page() {
                 <input type="range" min={0} max={1} step={0.01} value={opacity2} onChange={(e) => setOpacity2(parseFloat(e.target.value))} />
                 <button onClick={() => setVisible2(!visible2)}>{visible2 ? '👁️' : '🚫'}</button>
 
-                <div style={{ marginTop: '10px' }}>Crown21:</div>
+                <div style={{ marginTop: '10px' }}>Crown24:</div>
                 <input type="color" value={color3} onChange={(e) => setColor3(e.target.value)} />
                 <input type="range" min={0} max={1} step={0.01} value={opacity3} onChange={(e) => setOpacity3(parseFloat(e.target.value))} />
                 <button onClick={() => setVisible3(!visible3)}>{visible3 ? '👁️' : '🚫'}</button>
 
-                <div style={{ marginTop: '10px' }}>Crown22:</div>
+                <div style={{ marginTop: '10px' }}>Ti-base:</div>
                 <input type="color" value={color4} onChange={(e) => setColor4(e.target.value)} />
                 <input type="range" min={0} max={1} step={0.01} value={opacity4} onChange={(e) => setOpacity4(parseFloat(e.target.value))} />
                 <button onClick={() => setVisible4(!visible4)}>{visible4 ? '👁️' : '🚫'}</button>
