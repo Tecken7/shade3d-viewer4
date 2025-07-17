@@ -92,7 +92,7 @@ export default function Page() {
                     <Model url="/models/Lower.obj"  color={color2} opacity={opacity2} visible={visible2} />
                     <Model url="/models/Crown21.obj" color={color3} opacity={opacity3} visible={visible3} />
                     {/* Crown22 se sníženou kovovostí */}
-                    <Model url="/models/Crown22.obj" color={color4} opacity={opacity4} visible={visible4} metalness={1.0} />
+                    <Model url="/models/Crown22.obj" color={color4} opacity={opacity4} visible={visible4} metalness={1.0} roughness={1.0} />
                 </Suspense>
 
                 <OrbitControls />
