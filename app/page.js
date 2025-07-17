@@ -87,7 +87,7 @@ export default function Page() {
                         color={color4}
                         opacity={opacity4}
                         visible={visible4}
-                        metalness={0.1}
+                        metalness={1.0}
                         roughness={0} // 👈 zrcadlový povrch
                     />
                 </Suspense>
