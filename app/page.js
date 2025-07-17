@@ -29,7 +29,7 @@ export default function Page() {
     const [color1, setColor1] = useState('#f5f5dc')
     const [color2, setColor2] = useState('#f5f5dc')
     const [color3, setColor3] = useState('#ffffff')
-    const [color4, setColor4] = useState('#e6e6e6')
+    const [color4, setColor4] = useState('#ffffff')
 
     const [opacity1, setOpacity1] = useState(1)
     const [opacity2, setOpacity2] = useState(1)
